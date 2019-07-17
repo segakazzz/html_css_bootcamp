@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+    width: 200px;
+    background-color: #48494B;
+    min-height: 100vh;
+    height: inherit;
+    color: white;
+    float: left;
+    position: relative;
+    
+
+    input {
+        opacity: 0.5;
+        background-color: #48494B;
+        width: 100%;
+        color: #D9DDDC;
+        border: 2px solid #D9DDDC;
+        padding: 5px;
+        box-sizing: border-box;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #D9DDDC;
+        &:hover{
+            color: white;
+        }
+    }
+
+    li {
+        margin-top: 20px;
+        font-weight: bold;
+        list-style-type: none;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    header, div#div-search, nav{
+        margin: 15px;
+    }
+
+    header {
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        bottom: 0;
+        font-size: 60%;
+        color: #D9DDDC;
+        position: absolute;
+        bottom: 20px;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+    
+}
+
+.height20px{
+    height: 20px;
+}
+
+main{
+    float: right;
+    // min-height: 100vh;
+    height: 100vh;
+    width: calc(100% - 200px);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: scroll;
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    hgroup {
+        * {
+            margin: 5px;
+        }
+    }
+
+    section {
+        margin: 10px;
+        article { 
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: #222021;
+            position: relative;
+            h1 {
+                font-size: 10px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 5px;
+                font-size: 90%;
+            }
+            blockquote{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: lightgray;
+                padding : 20px;
+                border-left: 5px gray solid;
+                color: gray;
+                p {
+                    font-style: italic;
+                    padding: 1em;
+                    line-height: 2em;
+                    &:before{
+                        content: open-quote;
+                        font-size: 3em;
+                    }
+                    &:after{
+                        display: inline-block;
+                        content: close-quote;
+                        font-size: 3em;
+                        position: absolute;
+                        right: 20px;
+                    }
+                }
+                .who{
+                    text-align: right;
+                }
+
+            }
+        }
+    }
+
+
+}
