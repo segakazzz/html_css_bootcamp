@@ -13,10 +13,12 @@ header {
   text-align: center;
   position: relative;
   color: white;
+  height: 480px;
+  overflow: hidden;
 }
 
 header img#atl {
-  background-color: red;
+  height: 100%;
 }
 
 header nav {
@@ -110,4 +112,37 @@ footer small {
   bottom: 10px;
   font-size: 0.8rem;
   color: gray;
+}
+
+main {
+  background-color: #f7f7f7;
+  padding: 50px;
+  height: 500px;
+  text-align: center;
+}
+
+main h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+main #item-group {
+  width: 80%;
+  margin: 50px auto;
+}
+
+main .item {
+  float: left;
+  width: calc(100% / 3);
+}
+
+main .item h1 {
+  font-weight: normal;
+  margin: 20px 5px;
+  font-size: 2rem;
+}
+
+main .item p {
+  padding: 10px;
 }
